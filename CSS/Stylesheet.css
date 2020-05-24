@@ -10,7 +10,6 @@ body {
     text-align: center;
     background: black;
 }
-  
 .header h1 {
     font-size: 50px;
     color: chartreuse;
@@ -19,27 +18,38 @@ body {
 }
 
 .nav_bar {
-    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
     background-color: #333;
     width: 100%;
     margin-bottom: 10px;
-  }
-  
-.nav_bar a {
-    float: left;
-    display: block;
+}
+
+.nav_button {
+    padding: 15px 30px;
+    border-right: 1px solid #000000;
+    transition: all 0.3s ease;
     color: white;
+}
+
+.nav_bar a {
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    color: inherit;
 }
-  
-.nav_bar a:hover {
-    background-color: #ddd;
+
+.nav_bar .nav_button:hover {
+    background-color: lightgrey;
     color: black;
+    padding: 20px 40px;
 }
-  
-.left_column {   
+
+.curPage {
+    background-color: black;
+}
+
+.left_column {
     position: sticky;
     float: left;
     width: 25%;
@@ -47,17 +57,16 @@ body {
 }
 
 .left_column img {
+    transition: width 0.25s ease;
     display: block;
     width: 80%;
     margin-bottom: 5px;
 }
 
 .left_column img:hover {
-    display: block;
     width: 100%;
-    margin: 5px;
 }
-  
+
 .right_column {
     float: left;
     width: 65%;

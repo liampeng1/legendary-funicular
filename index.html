@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-
 <head>
     <title> Personal Website of Liam Peng </title>
     <link href="CSS/Stylesheet.css" rel="stylesheet"/>
-    <link href="headers.html" rel="import" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="JS/functions.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
 <body>
 
-<div id="headers"></div>
+<div id="headers">
+    <div class = "header">
+        <h1>
+            liampeng.com
+        </h1>
+    </div>
 
-<div id="h"></div>
+    <div class = "nav_bar">
+        <div class="nav_button curPage" data-page-name="home.html">Home</div>
+        <div class="nav_button" data-page-name="projects.html">Projects</div>
+        <div class="nav_button" data-page-name="resume.html">Resume</div>
+        <div class="nav_button" data-page-name="contact.html">Contact</div>
+    </div>
 
-<script>
-    $(function(){
-      $("#headers").load("headers.html");
-    });
-</script>
-
-<div class = "right_column">
-    <p>
-        I am a 2020 graduate of Colgate University where I majored in 
-        Computer Science and Minored in Art and Art History. I am currently looking for work
-        as a full-time Software Engineer.
-    </p>
+    <div class = "left_column">
+        <img src="images/LiamPeng_Frank.jpg" alt="Liam Peng at Frank Dining Hall">
+        <img src="images/LiamPeng_ClimbingWall.jpg" alt="Liam Peng at Climbing Wall">
+    </div>
 </div>
+
+<div id="content"></div>
+
+<script>console.log("okay")</script>
+<script src="JS/functions.js"></script>
+
 
 </body>
 </html>
