@@ -1,3 +1,10 @@
+function showProject(event) {
+    console.log(event);
+    const projectName = event.target.dataset.projectName;
+    const dropdown = document.querySelector("#projectName");
+    dropdown.classList.toggle("show");
+};
+
 function updatePage(event) {
     console.log(event);
     const button = event.target;
@@ -29,7 +36,6 @@ function updateContent(pageName) {
 };
 
 function onPageLoaded() {
-    console.log("called onPageLoaded");
     document.querySelectorAll('.nav_button').forEach(btn => {
         btn.addEventListener('click', updatePage);
     });
@@ -38,4 +44,3 @@ function onPageLoaded() {
 };
 
 onPageLoaded();
-console.log("helllo");
